@@ -1,0 +1,62 @@
+.header{
+    grid-area:header;
+
+}
+
+
+.nav{
+
+grid-area:nav;
+
+}
+
+
+.section
+{
+grid-area:section;
+
+}
+
+
+.aside{
+    grid-area:aside;
+
+}
+
+.footer{
+
+
+    grid-area:footer;
+}
+
+
+.container{
+
+    display:grid;
+   /* grid-template-columns: 50px 50px 50px 50px;
+    grid-template-rows: auto;
+    */
+    grid-template-rows: 100px 100px 200px 100px;
+    grid-template-columns: 500px 100px 100px;
+    grid-template-areas:
+
+    "header header header header"
+    "nav nav nav nav"
+    "section section aside aside"
+    "footer footer footer footer";
+
+    grid-gap:10px ;
+    background-color: cyan;
+    padding: 10px;
+   
+    
+}
+
+
+.container >div{
+
+    background-color: white;
+    text-align: center;
+    
+  
+}
